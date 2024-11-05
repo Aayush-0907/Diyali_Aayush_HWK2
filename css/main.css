@@ -1,0 +1,234 @@
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 205, 3);
+    color: black;
+}
+
+header {
+    background-color: black;
+    padding: 10px 0px;
+}
+
+nav {
+    background-color: rgb(181, 181, 181);
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position-y: -150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    height: 220px;
+    background-color: black;
+    margin: 10px;
+}
+
+nav ul li h4 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#header_logo {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
+}
+
+#luffy_box {
+    box-shadow: 0px 155px 0px #5fa4ff inset;
+    transition: box-shadow 0.2s ease-in-out;
+ }
+ 
+ 
+ #luffy_box:hover {
+    box-shadow: 0 220px 0 0 #5fa4ff inset;
+ }
+ 
+ 
+ #zoro {
+    background-position: -150px 0;
+ }
+ 
+ 
+ #zoro_box {
+    box-shadow: 0px 155px 0px #ff8921 inset;
+    transition: box-shadow 0.2s ease-in-out;
+ }
+ 
+ 
+ #zoro_box:hover {
+    box-shadow: 0 220px 0 0 #ff8921 inset;
+ }
+ 
+ 
+ #sanji {
+    background-position: -300px 0;
+ }
+ 
+ 
+ #sanji_box {
+    box-shadow: 0px 155px 0px #3ada0e inset;
+    transition: box-shadow 0.2s ease-in-out;
+ }
+ 
+ 
+ #sanji_box:hover {
+    box-shadow: 0 220px 0 0 #3ada0e inset;
+ } 
+
+#chopper {
+    background-position: -450px 0px;
+}
+
+#chopper_box {
+    box-shadow: 0px 155px 0px #591277 inset;
+    transition: box-shadow 0.2s ease-in-out;
+ }
+ 
+ 
+ #chopper_box:hover {
+    box-shadow: 0 220px 0 0 #591277 inset;
+ } 
+
+#robin {
+    background-position: -600px 0px;
+}
+
+#robin_box {
+    box-shadow: 0px 155px 0px #c00d00 inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+ 
+ 
+#robin_box:hover {
+    box-shadow: 0 220px 0 0 #c00d00 inset;
+} 
+
+#nami {
+    background-position: -750px 0px;
+}
+
+#nami_box {
+    box-shadow: 0px 155px 0px #dfbd24 inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+ 
+#nami_box:hover {
+    box-shadow: 0 220px 0 0 #dfbd24 inset;
+} 
+
+#luffy:hover, #zoro:hover, #sanji:hover, #chopper:hover, #robin:hover, #nami:hover {
+    background-position-y: -150px;
+ }
+ 
+ #lightbox2 {
+    background-image: url(../images/zoro.png)
+ }
+
+ #lightbox3 {
+    background-image: url(../images/sanji.png)
+    
+ }
+
+ #lightbox4 {
+    background-image: url(../images/chopper.png)
+ }
+
+ #lightbox5 {
+    background-image: url(../images/robin.png)
+ }
+
+ #lightbox6 {
+    background-image: url(../images/nami.png)
+ }
+
+.hidden {
+    display: none;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/One-Piece.jpg);
+    
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    background-image: url(../images/luffy.png);
+    background-repeat: no-repeat;
+    background-size: 39vh;
+    background-position: 0px bottom;
+    display: none;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+.lightbox article {
+    background-color: rgba(255, 255, 255, 0.774);
+    width: 800px;
+    padding: 15px;
+    border: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+    margin: 25px 25px auto auto;
+}
+
+.lightbox_header {
+    display: flex;
+}
+
+.lightbox a, .lightbox h5 {
+    font-style: bold;
+    
+}
+
+.lightbox a {
+    text-align: right;
+    font-size: 32px;
+    margin: 15px 25px auto auto;
+}
+
+.lightbox h5 {
+    text-align: left;
+    font-size: 20px;
+    font-style: bold;
+    margin: 25px auto auto 25px;
+}
+
+.lightbox p {
+    width: 800px;
+    margin: 25px 25px auto auto;
+    font-size: 20px;
+}
+.close {
+    color: black;
+}
